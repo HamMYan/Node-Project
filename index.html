@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <table>
+        <thead>
+            <th>method</th>
+            <th>url</th>
+            <th>body, params, auth</th>
+            <th>return</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    GET
+                </td>
+                <td>/profile</td>
+                <td>auth bearer token</td>
+                <td>obj</td>
+            </tr>
+            <tr>
+                <td>
+                    GET
+                </td>
+                <td>/admin/profile</td>
+                <td>auth bearer token, type = 1</td>
+                <td>obj</td>
+            </tr>
+            <tr>
+                <td>
+                    GET
+                </td>
+                <td>/user/profile</td>
+                <td>auth bearer token, type = 0</td>
+                <td>obj</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+                <td>POST</td>
+                <td>/register</td>
+                <td>
+                    <pre>
+{
+   "name": "...",
+   "surname": "...",
+   "email": "...",
+   "password":"..."
+}
+                    </pre>
+                </td>
+                <td>
+                    obj
+                </td>
+            </tr>
+            <tr>
+                <td>POST</td>
+                <td>/login</td>
+                <td>
+                    <pre>
+{
+   "username": "...",
+   "password":"..."
+}
+                    </pre>
+                </td>
+                <td>
+                    obj
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
